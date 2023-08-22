@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--linquear hoja de estilos CSS-->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>complejo hotelero</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="promociones">
+            <div class="promociones_texto">
+                <p>Life Style Exclusive Hotel</p>
+            </div>
+            <div class="promociones_logos">
+                <div class="icono_tienda"></div>
+                <div class="texto_promociones">
+                    <a href="">Promociones</a>
+                </div>
+                <div class="icono_tienda"></div>
+                <div class="texto_tiendaOnline">
+                    <a href="">Tienda Online</a>
+                </div>
+            </div>
+        </div>
+        <div class="logo">
+            <img src="./MEDIA/img/Logo_trans.png" alt="logo-trans">
+        </div>
+        <div class="telefono">
+            <div class="telefono_texto">
+                <p>654 321 689 - 961 478 523</p>
+            </div>
+            <div class="telefono_logos">
+                <div class="icono1"></div>
+                <div class="texto1">
+                    <p><a href="">English</a></p>
+                </div>
+                <div class="icono2"></div>
+                <div class="texto2">
+                    <p><a href="./localizacion.html">Localización</a></p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="nav">
+        <!--lista desordenada-->
+        <ul>
+            <li>
+                <a href="./index.html">HOME</a></li>
+            <li>
+                <a href="./habitaciones.html">HABITACIONES</a></li>
+            <li><a class="select" href="./contacto.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+    <section class="seccion2-contacto">
+        <h2>Para más información</h2>
+        <h1> contáctanos</h1>
+        <p class="parrafo_centro_contacto">
+            Para ampliar información sobre alguno de nuestros servicios, pedir alguna cita o reservar en nuestro restaurante, no dudes en ponerte en contacto con nosotros. <br> <br> ¡Te esperamos!
+        </p>
+    </section>
+
+
+
+    <div class="contenedor-formulario">
+
+
+
+
+        <!--FORMULARIO-->
+        <form action="#" name="formulario" method="post">
+            <div class="form-nombre">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" minlength="2" maxlength="50" pattern="[A-Za-z]{2,50}" title="no puede escribir numeros o simbolos, solo letras" required="">
+            </div>
+            <div class="form-ciudad">
+                <label for="ciudad">Ciudad <span> Opcional </span></label>
+                <input type="text" id="ciudad" name="ciudad" required minlength="3" maxlength="50">
+            </div>
+            <div class="form-email">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}$" required="">
+            </div>
+            <div class="form-telefono">
+                <label for="telefono">Telefono</label>
+                <input type="text" id="telefono" name="telefono" pattern="[0-9{10}]" required>
+            </div>
+
+
+
+            <div class="form-asunto">
+
+                <label for="asunto">Asunto</label>
+                <input type="text" id="asunto" name="asunto" minlength="5" maxlength="50" required>
+            </div>
+            <div class="form-consulta">
+                <label for="consulta">Consulta</label>
+                <textarea name="texto" id="consulta" cols="70" rows="3" required></textarea>
+            </div>
+            <div class="leido">
+                <input type="checkbox" name="condiciones" required> He leído y acepto la política de privacidad y los terminos legales.
+                <input class="boton-enviar button" type="submit" value="enviar">
+            </div>
+
+        </form>
+
+
+        <!--TABLA
+tr  =table row  (hace una fila)
+td  =table data (hace una celda)
+th  =table head (dentro de un tr)-->
+        <table>
+            <tbody>
+                <tr>
+                    <th colspan="2">Información Básica sobre la Protección de datos</th>
+                </tr>
+                <tr>
+                    <td>Responsable: </td>
+                    <td>Ordi, A Better Life, S.L.</td>
+
+                </tr>
+                <tr>
+                    <td>Finalidad: </td>
+                    <td>Atender su solicitud.</td>
+
+                </tr>
+                <tr>
+                    <td>Legitimación: </td>
+                    <td>Ejecución de un contrato</td>
+
+                </tr>
+                <tr>
+                    <td>Destinaarios: </td>
+                    <td>No se concederán datos a terceros, salvo obligación legal</td>
+                </tr>
+                <tr>
+                    <td>Derechos: </td>
+                    <td>Tiene derecho a acceder, rectificar y suprimir los datos, así como los otros derechos, indicados en la informacion adicional, que puede ejercer dirigiéndose a Les Molines, 2- 03450 banyeres de Mariola.</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Más información en nuestra politica de privacidad.</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+
+
+
+
+        <div class="derecha">
+            <div class="contactanos">
+                <h6>CONTACTANOS EN: </h6>
+                <ul>
+                    <li>+(34) 665485699</li>
+                    <li>+(34) 949539499</li>
+                    <li>info@ordi.es</li>
+                    <li> <img src="./MEDIA/img/solo-adultos_es.png" alt=""></li>
+
+
+                </ul>
+                <h6>HORARIO DE RECEPCIÓN:</h6>
+                <ul>
+                    <li>Lunes a Jueves</li>
+                    <li>de 9:30 a 22:30h</li>
+                    <li>Viernes a Domingo</li>
+                    <li>de 8:30 a 22:30h</li>
+                </ul>
+                <h6>SÍGUENOS EN:</h6>
+                <ul>
+                    <li>
+                        <div class="redesSociales-contacto">
+                            <a href="https://www.facebook.com"><img src="./MEDIA/img/iconos/ico-facebook.png" alt=""></a>
+                            <a href="https://www.instagram.com"><img src="./MEDIA/img/ico-instagram.png" alt=""></a>
+                            <a href="https://www.youtube.com"><img src="./MEDIA/img/ico-youtube.png" alt=""></a>
+                        </div>
+                    </li>
+                </ul>
+                <h6>INFORMACIÓN DE INTERÉS:
+                </h6>
+                <ul>
+
+                    <li><a href="./localizacion.html">¿Cómo llegar?</a></li>
+                    <li>Ver actividades</li>
+                    <li>Preguntas frecuentes</li>
+                    <li>Ver testimonios</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="entrelineas">
+        <p> <span> ORDI, THE ENERGY HOUSE </span> | Yellowstone Wyoming 82190, EE.UU.</p>
+    </div>
+
+
+
+
+
+
+    <div class="empujar-footer"></div>
+    <footer>
+        <div class="footer">
+            <img class="logo_footer" src="./MEDIA/img/Logo_trans.png" alt="logo-trans">
+            <div class="direccion">
+                <p>Yellowstone, Wyoming 82190, EE.UU.T. <br> (+34)669 558 447 T. (+34) 963 852 741 <br> info@ordi.es
+                </p>
+                <div class="soloAdultos">
+                    <img src="./MEDIA/img/solo-adultos_es.png" alt="solo-adultos">
+                </div>
+            </div>
+
+            <img class="sello" src="./MEDIA/img/sello-traveller-footer.png" alt="sello-traveller-footer">
+            <img class="logo_hotelero" src="./MEDIA/img/logo-hotelero-ruralka.png" alt="logo-hotelero-footer">
+            <a class="como_llegar" href="./localizacion.html">¿Como llegar?</a>
+            <div class="redesSociales">
+
+                <a href="https://facebook.com"> <img src="./MEDIA/img/ico-facebook.png" alt="ico-facebook"></a>
+
+                <a href="https://www.instagram.com/"><img src="./MEDIA/img/ico-instagram.png" alt="ico-instagram"></a>
+                <a href="https://www.youtube.com/"><img src="./MEDIA/img/ico-youtube.png" alt="ico-youtube"></a>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+            <p>Actividad realizada para el modulo de lenguajes de marcas. Curso 2022-2023. Óscar Ibáñez Martínez</p>
+        </div>
+    </footer>
+
+
+</html>
